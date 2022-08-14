@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/main_cat_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:outlineAmbientShadowColor="@color/black"
+    android:textAlignment="center"
+
+
+    />
+
+    <ImageView
+        android:id="@+id/i_dont_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_thumb_up_24"
+        app:layout_constraintBottom_toBottomOf="@id/main_cat_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+         />
+    <ImageView
+        android:id="@+id/i_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_thumb_down_24"
+        app:layout_constraintBottom_toBottomOf="@id/main_cat_view"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_like_pressed_24"
+        app:layout_constraintTop_toTopOf="@id/main_cat_view"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/like_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="like_text"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/red"
+
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/ic_baseline_like_pressed_24"
+        app:layout_constraintTop_toBottomOf="@id/heart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
